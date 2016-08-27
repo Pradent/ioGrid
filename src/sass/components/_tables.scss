@@ -1,0 +1,17 @@
+table {
+    width: 100%;
+    empty-cells: show;
+}
+th,
+td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+th:first-child,
+td:first-child {
+    padding-left: 0;
+}
+th:last-child,
+td:last-child {
+    padding-right: 0;
+}

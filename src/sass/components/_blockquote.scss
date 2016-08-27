@@ -1,0 +1,27 @@
+.#{$p}blockquote {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  border-left: 0.25rem solid #eceeef;
+}
+.#{$p}blockquote_footer {
+  display: block;
+  font-size: 80%;
+  color: #818a91;
+}
+.#{$p}blockquote_footer::before {
+  content: "\2014 \00A0";
+}
+.#{$p}blockquote--reverse {
+  padding-right: 1rem;
+  padding-left: 0;
+  text-align: right;
+  border-right: 0.25rem solid #eceeef;
+  border-left: 0;
+}
+.#{$p}blockquote--reverse .#{$p}blockquote_footer::before {
+  content: "";
+}
+.#{$p}blockquote--reverse .#{$p}blockquote_footer::after {
+  content: "\00A0 \2014";
+}

@@ -1,0 +1,56 @@
+.#{$p}separator {
+  display: block;
+  width: 100%;
+  float: none;
+  overflow: hidden;
+  height: 20px;
+  background-color: transparent;
+  &--10 {
+    @extend .#{$p}separator;
+    height: 10px;
+  }
+  &--20 {
+    @extend .#{$p}separator;
+    height: 20px;
+  }
+  &--30 {
+    @extend .#{$p}separator;
+    height: 30px;
+  }
+  &--40 {
+    @extend .#{$p}separator;
+    height: 40px;
+  }
+  &--50 {
+    @extend .#{$p}separator;
+    height: 50px;
+  }
+  &--60 {
+    @extend .#{$p}separator;
+    height: 60px;
+  }
+  &--70 {
+    @extend .#{$p}separator;
+    height: 70px;
+  }
+  &--80 {
+    @extend .#{$p}separator;
+    height: 80px;
+  }
+  &--90 {
+    @extend .#{$p}separator;
+    height: 90px;
+  }
+  &--100 {
+    @extend .#{$p}separator;
+    height: 100px;
+  }
+  &--120 {
+    @extend .#{$p}separator;
+    height: 120px;
+  }
+  &--140 {
+    @extend .#{$p}separator;
+    height: 140px;
+  }
+}

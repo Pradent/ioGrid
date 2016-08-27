@@ -1,0 +1,12 @@
+.#{$p}list--unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.#{$p}list--inline {
+  padding-left: 0;
+  list-style: none;
+  li,
+  &-item {
+    display: inline-block;
+  }
+}

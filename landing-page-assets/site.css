@@ -1,0 +1,79 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+a {
+    color: #FBBC09;
+}
+a:hover,
+a:focus {
+    color: #171717;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Gentium Basic', serif;
+}
+
+/* Top Section */
+#top {
+    background-color: #FBBC09;
+}
+#top h1 {
+    font-weight: 100;
+}
+#top h2 {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+#top h4 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+#top a {
+    color: #232323;
+    text-decoration: underline;
+}
+#top a:hover {
+    color: #232323;
+    opacity: 0.6;
+}
+#top .btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #232323;
+
+}
+#top .btn:hover {
+    color: #fff;
+    opacity: 1;
+    background-color: #232323;
+    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+}
+
+
+/* Overview Section */
+.site__infobox {
+    padding: 20px;
+    border: 4px solid #FBBC09;
+    height: 100%;
+    margin-bottom: 15px;
+}
+.site__infobox h6 {
+    color: #FBBC09;
+}
+
+
+/* Grid Section */
+#grid > div > div > div > span {
+    display: block;
+    background-color: #232323;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+    height: 100%;
+}
+#grid .col--3:nth-child(even) span,
+#grid .col:nth-child(even) span {
+    background-color: #fbbc09;
+}

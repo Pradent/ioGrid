@@ -1,0 +1,169 @@
+.#{$p}container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1140px;
+}
+.#{$p}container::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.#{$p}container--full {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.#{$p}container--full::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.#{$p}grid {
+  margin-left: -15px;
+  margin-right: -15px;
+
+  &--no-gutter {
+    .#{$p}col {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  &--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    @extend .#{$p}grid;
+
+    .#{$p}col {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+    }
+    &-equal {
+      @extend .#{$p}grid--flex;
+
+      .#{$p}col {
+        flex: 1 1 0%;
+      }
+
+      &-height {
+        @extend .#{$p}grid--flex-equal;
+        .#{$p}col {
+          flex: auto;
+        }
+      }
+
+      &-width {
+        @extend .#{$p}grid--flex-equal;
+      }
+    }
+
+    &-middle {
+        @extend .#{$p}grid--flex;
+
+        align-items: center;
+    }
+
+    &-bottom {
+        @extend .#{$p}grid--flex;
+
+        align-items: flex-end;
+    }
+  }
+}
+.#{$p}grid::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.#{$p}col {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: inline-block;
+  float: left;
+}
+.#{$p}col--1 {
+  width: 8.333333%;
+  @extend .#{$p}col;
+}
+.#{$p}col--2 {
+  width: 16.666667%;
+  @extend .#{$p}col;
+}
+.#{$p}col--3 {
+  width: 25%;
+  @extend .#{$p}col;
+}
+.#{$p}col--4 {
+  width: 33.333333%;
+  @extend .#{$p}col;
+}
+.#{$p}col--5 {
+  width: 41.666667%;
+  @extend .#{$p}col;
+}
+.#{$p}col--6 {
+  width: 50%;
+  @extend .#{$p}col;
+}
+.#{$p}col--7 {
+  width: 58.333333%;
+  @extend .#{$p}col;
+}
+.#{$p}col--8 {
+  width: 66.666667%;
+  @extend .#{$p}col;
+}
+.#{$p}col--9 {
+  width: 75%;
+  @extend .#{$p}col;
+}
+.#{$p}col--10 {
+  width: 83.333333%;
+  @extend .#{$p}col;
+}
+.#{$p}col--11 {
+  width: 91.666667%;
+  @extend .#{$p}col;
+}
+.#{$p}col--12 {
+  width: 100%;
+  @extend .#{$p}col;
+}
+@media all and (min-width: $tablet-breakpoint) {
+    .#{$p}grid {
+      &--flex {
+
+        &-equal-width {
+            align-items: flex-start;
+        }
+      }
+    }
+}
+@media all and (max-width: $tablet-breakpoint) {
+  .#{$p}grid {
+    &--flex {
+      flex-direction: column;
+    }
+  }
+  .#{$p}col--1,
+  .#{$p}col--2,
+  .#{$p}col--3,
+  .#{$p}col--4,
+  .#{$p}col--5,
+  .#{$p}col--6,
+  .#{$p}col--7,
+  .#{$p}col--8,
+  .#{$p}col--9,
+  .#{$p}col--10,
+  .#{$p}col--11,
+  .#{$p}col--12 {
+    display: block;
+    width: 100%;
+    float: none;
+  }
+}

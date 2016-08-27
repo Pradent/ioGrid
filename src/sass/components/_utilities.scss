@@ -1,0 +1,63 @@
+/* Visibility */
+.#{$p}hidden {
+  display: none;
+}
+.#{$p}visible {
+  display: block;
+}
+.#{$p}hidden--soft {
+  visibility: hidden;
+  opacity: 0;
+}
+.#{$p}visible--soft {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Alignment */
+.#{$p}block--left {
+
+}
+.#{$p}block--center {
+  @include center-block;
+}
+.#{$p}block--right {
+    margin: auto 0 0 auto;
+}
+.#{$p}text--left {
+  text-align: left;
+}
+.#{$p}text--center {
+  text-align: center;
+}
+.#{$p}text--right {
+  text-align: right;
+}
+
+/* Margins */
+._nomt {
+  margin-top: 0;
+}
+._nomr {
+  margin-right: 0;
+}
+._nomb {
+  margin-bottom: 0;
+}
+._noml {
+  margin-left: 0;
+}
+
+/* Paddings */
+._nopt {
+  padding-top: 0;
+}
+._nopr {
+  padding-right: 0;
+}
+._nopb {
+  padding-bottom: 0;
+}
+._nopl {
+  padding-left: 0;
+}

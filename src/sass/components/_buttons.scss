@@ -1,0 +1,98 @@
+.#{$p}btn,
+[type=submit],
+button {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0px solid transparent;
+  padding: 10px 25px;;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: $default;
+  color: #fff;
+  @include transition(all .3s ease);
+}
+.#{$p}btn:hover,
+.#{$p}btn:focus,
+.#{$p}btn:active,
+[type=submit]:hover,
+[type=submit]:focus,
+[type=submit]:focus,
+button:hover,
+button:focus,
+button:active {
+  text-decoration: none;
+  background-color: $default-alt;
+  color: #fff;
+}
+
+.#{$p}btn:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.#{$p}btn:active {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.#{$p}btn.--disabled {
+
+}
+.#{$p}btn.--disabled:hover,
+.#{$p}btn.--disabled:focus,
+.#{$p}btn.--disabled:active {
+
+}
+.#{$p}btn--success {
+  background-color: $success;
+  @extend .#{$p}btn;
+
+  &:hover,
+  &:focus {
+    background-color: $success-alt;
+  }
+}
+.#{$p}btn--danger {
+  background-color: $danger;
+  @extend .#{$p}btn;
+
+  &:hover,
+  &:focus {
+    background-color: $danger-alt;
+  }
+}
+.#{$p}btn--link {
+  background-color: transparent;
+  color: $default;
+  @extend .#{$p}btn;
+
+  &:hover,
+  &:focus {
+    color: $default-alt;
+    background-color: transparent;
+  }
+}
+.#{$p}btn--disabled {
+  cursor: not-allowed;
+  opacity: .4;
+  @extend .#{$p}btn;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    cursor: not-allowed;
+    background-color: $default;
+    opacity: .4;
+  }
+}
